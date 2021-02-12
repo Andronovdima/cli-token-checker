@@ -4,7 +4,8 @@ build:
 
 .PHONY: run
 run:
-	./cli-bnf-token cube.testserver.mail.ru 4995 abracadabra test
+	go build .
+	./cli-token-checker cube.testserver.mail.ru 4995 abracadabra test
 
 test:
 	go build .
